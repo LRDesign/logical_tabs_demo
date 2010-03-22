@@ -3,4 +3,16 @@
 
 <% wrap_in_div("some_id") do %>
   <p>This is some content in a div/paragraph nest.</p>
-<% end %>  
+<% end %>     
+
+<% create_tabbed_panel do |tabbed_panel| %>
+  <% tabbed_panel.add_tab("Tab One") do %>
+    Content for Tab One
+  <% end %>  
+  <% tabbed_panel.add_tab("Tab Two") do %>
+    Content for Tab Two
+  <% end %>  
+  <% tabbed_panel.add_tab("Tab Three") do %>
+    <p>Content for Tab Three</p>
+  <% end %>          
+<% end %>
