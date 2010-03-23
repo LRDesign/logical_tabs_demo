@@ -7,7 +7,7 @@ RAILS_GEM_VERSION = '2.3.5' unless defined? RAILS_GEM_VERSION
 require File.join(File.dirname(__FILE__), 'boot')
 
 Rails::Initializer.run do |config|
-  config.gem 'haml', :version => ">= 2.2.0"
+  config.gem 'haml', :version => ">= 2.2"
   
   # config.active_record.observers = :cacher, :garbage_collector, :forum_observer
 
