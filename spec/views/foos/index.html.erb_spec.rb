@@ -8,4 +8,8 @@ describe "/foos/index" do
   it "should succeed" do
     response.should be_success
   end
+  
+  # it "should allow have_tag on a string" do
+  #   "foo".should have_tag("li")    
+  # end
 end
