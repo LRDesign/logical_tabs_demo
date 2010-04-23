@@ -2,30 +2,31 @@
                                                                               
 %p 
   This is a second controller for demonstration purposes, and to test that
-  the plugin works with HAML as well as ERB.  
-
-- wrap_in_div("some_id") do 
-  %p This is some content in a div/paragraph nest.
+  the plugin works with HAML as well as ERB.
+  
+= link_to "See the Foos controller for a HAML example.", foos_path     
   
 - create_tabbed_panel do |tabbed_panel|
-  - tabbed_panel.add_tab("P-One") do
-    %p This is some content in a tabbed panel  
+  - tabbed_panel.add_tab("Tab One") do
+    %p This is some content in a tab pane  
     
-  - tabbed_panel.add_tab("P-Two") do
-    %p This is some content in a second tabbed panel  
+  - tabbed_panel.add_tab("Tab Two") do
+    %p This is some content in a second tab pane
     
-  - tabbed_panel.add_tab("P-Three") do
-    %p This is some content in a third tabbed panel  
+  - tabbed_panel.add_tab("Tab Three") do
+    %p This is some content in a third tab pane  
+
+  - tabbed_panel.add_tab("Tab Four", :content => "Content in pane four")
     
-    / - create_tabbed_panel do |tabbed_panel|
-    /   - p_content = capture do   
-    /     %p Content for panel one
-    /   - tabbed_panel.add_tab("Tab One", p_content)
-    / 
-    /   - p_content = capture do   
-    /     %p Content for panel two
-    /   - tabbed_panel.add_tab("Tab Two", p_content) 
-    / 
-    /   - p_content = capture do   
-    /     %p Content for panel three
-    /   - tabbed_panel.add_tab("Tab Three", p_content) 
+    
+- create_tabbed_panel do |tabbed_panel|
+  - tabbed_panel.add_tab("Tab A One") do
+    %p This is some content in a tab pane  
+
+  - tabbed_panel.add_tab("Tab A Two") do
+    %p This is some content in a second tab pane
+
+  - tabbed_panel.add_tab("Tab A Three") do
+    %p This is some content in a third tab pane  
+
+  - tabbed_panel.add_tab("Tab A Four", :content => "Content in pane four")    

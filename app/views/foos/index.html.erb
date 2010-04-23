@@ -1,9 +1,9 @@
 <h1>Foos Controller</h1>
-<p>This is a controller just for demonstration purposes.</p>
 
-<% wrap_in_div("some_id") do %>
-  <p>This is some content in a div/paragraph nest.</p>
-<% end %>     
+<p>This is a controller just for demonstration purposes.  The tabbed panel is rendered
+via ERB in this view.</p>
+
+<%= link_to "See the Bars controller for a HAML example.", bars_path %> 
 
 <% create_tabbed_panel do |tabbed_panel| %>
   <% tabbed_panel.add_tab("Tab One") do %>
