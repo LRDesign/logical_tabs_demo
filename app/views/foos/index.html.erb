@@ -1,7 +1,12 @@
 <h1>Foos Controller</h1>
 
+<% content_for :javascripts do %>
+  <%= javascript_include_tag 'prototype.js' %>
+  <%= javascript_include_tag 'logical_tabs_prototype.js' %>
+<% end %>
+                                                        
 <p>This is a controller just for demonstration purposes.  The tabbed panel is rendered
-via ERB in this view.</p>
+via ERB in this view, and uses Prototype for javascript.</p>
 
 <%= link_to "See the Bars controller for a HAML example.", bars_path %> 
 

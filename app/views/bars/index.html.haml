@@ -1,4 +1,9 @@
 %h1 Bars Controller
+
+- content_for :javascripts do
+  = javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" 
+  = javascript_include_tag 'logical_tabs_jquery.js'
+
                                                                               
 %p 
   This is a second controller for demonstration purposes, and to test that
