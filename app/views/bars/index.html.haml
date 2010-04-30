@@ -7,9 +7,10 @@
                                                                               
 %p 
   This is a second controller for demonstration purposes, and to test that
-  the plugin works with HAML as well as ERB.
-  
-= link_to "See the Foos controller for a HAML example.", foos_path     
+  the plugin works with HAML as well as ERB.   Also, this page uses jQuery
+  rather than Prototype.
+                      
+= link_to "See the Foos controller for an ERB/Prototype example.", foos_path     
   
 - create_tabbed_panel do |tabbed_panel|
   - tabbed_panel.add_tab("Tab One") do
